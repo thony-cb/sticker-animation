@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import HeroCopy from "./components/HeroCopy";
 import StickerPlanes from "./components/StickerPlanes";
+import ImageGallery from "./components/ImageGallery";
 
 export default function Home() {
   const [MouseMovement, setMouseMovement] = useState(0);
@@ -23,16 +24,16 @@ export default function Home() {
       onMouseMove={(e) => {
         setMouseMovement(e);
       }}
-      className="w-full flex flex-col px-[5.5rem] h-[350vh]"
+      className="w-full flex flex-col px-[5.5rem]"
     >
       <section
         ref={HeroRef}
         className="relative flex flex-col items-center justify-center w-full h-screen"
       >
         <HeroCopy />
-        <StickerPlanes MouseMovement={MouseMovement} />
+        {/* <StickerPlanes MouseMovement={MouseMovement} /> */}
       </section>
-      <section className="relative flex flex-col justify-between w-full h-screen"></section>
+      <ImageGallery />
     </main>
   );
 }
