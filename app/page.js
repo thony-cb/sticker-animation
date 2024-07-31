@@ -31,7 +31,7 @@ export default function Home() {
         className="relative flex flex-col items-center justify-center w-full h-screen"
       >
         <HeroCopy />
-        {/* <StickerPlanes MouseMovement={MouseMovement} /> */}
+        <StickerPlanes MouseMovement={MouseMovement} />
       </section>
       <ImageGallery />
     </main>

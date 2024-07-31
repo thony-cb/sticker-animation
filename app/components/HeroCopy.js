@@ -6,8 +6,8 @@ export default function HeroCopy() {
     <>
       <div className="flex flex-col w-full text-center gap-7 ">
         <h1 className="relative text-5xl font-thin text-display ">
-          Scroll to view the <span className="italic font-thin">animation</span>
-          .
+          Move your cursor or Scroll to view the{" "}
+          <span className="italic font-thin">animation</span>.
         </h1>
         <h3 className="font-light text-white-125 text-small-body">
           Developer building unique animation using GSAP + React.
